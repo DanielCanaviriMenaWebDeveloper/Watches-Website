@@ -137,3 +137,36 @@ button {
     letter-spacing: 2px;
     text-align: center;
 }
+
+/*  HEADER & NAV */
+.header {
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    height: var(--header-heights);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__toggle,
+.nav__shop,
+.nav__close {
+    color: var(--title-color);
+}
+
+.nav__logo {
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+}
