@@ -2,6 +2,6 @@
 
 <p>https://danielcanavirimenawebdeveloper.github.io/Watches-Website/</p>
 
-<img src="images/imagen.png">
+<img src="assets/img/imagen.png">
 
 <p>Page Under Development</p>
