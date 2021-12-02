@@ -190,7 +190,7 @@ button {
 @media screen and (max-width: 767px) {
     .nav__menu {
         position: fixed;
-        background-color: rgb(204, 144, 144);
+        background-color: var(--body-color);
         top: 0;
         right: -100%;
         width: 100%;
@@ -211,7 +211,7 @@ button {
     color: var(--title-color);
     font-weight: var(--font-medium);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: var(--h2-font-size);
     transition: .3s;
 }
@@ -226,4 +226,9 @@ button {
     top: .9rem;
     right: 1.25rem;
     cursor: pointer;
+}
+
+/* Show menu */
+.show-menu {
+    right: 0;
 }
