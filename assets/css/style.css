@@ -144,6 +144,18 @@ button {
     text-align: center;
 }
 
+.section__title::before {
+    content: '';
+    background-color: var(--first-color);
+    position: absolute;
+    width: 67px;
+    height: 1px;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 /* Buttons */
 .button {
     display: inline-block;
@@ -354,6 +366,11 @@ button {
     font-weight: var(--font-medium);
     color: var(--first-color);
     margin-bottom: var(--mb-3);
+}
+
+.home__btns {
+    display: flex;
+    align-items: center;
 }
 
 .home__button {
