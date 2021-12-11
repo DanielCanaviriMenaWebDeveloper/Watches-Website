@@ -33,7 +33,7 @@ navLinks.forEach(link => link.addEventListener('click', linkAction) );
 /* Change Background Header */
 function scrollHeader() {
     const header = document.getElementById('header');
-    console.log(header);
+    /* console.log(header); */
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
     if(this.scrollY >=50) {
         header.classList.add('scroll-header');
@@ -71,3 +71,16 @@ let newSwiper = new Swiper(".new-swiper", {
         },
     },
 });
+
+/* Scroll Sections Active Link */
+const sections = document.querySelectorAll('section[id]'); // Selecciona todos los elementos de tipo section y que cuenten con un id
+
+function scrollActive() {
+    const scrollY = window.pageYOffSet;    
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 58;
+        const sectionId = current.getAttribute('id');
+    });
+}
